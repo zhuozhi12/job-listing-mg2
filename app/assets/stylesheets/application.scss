@@ -15,9 +15,9 @@
  *= require font-awesome
  */
 
- @import "bootstrap-sprockets";
- @import "bootstrap";
- @import "font-awesome";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
 
 //---------Footer always on the bottom
  html {
@@ -92,8 +92,8 @@
 
      .title {
          text-align: center;
-         color: #F8F8F8;
-         font-size: 90px;
+         //color: #F8F8F8;
+         //font-size: 90px;
          margin-bottom: 80px;
      }
 
