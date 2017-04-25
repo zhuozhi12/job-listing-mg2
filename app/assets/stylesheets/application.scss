@@ -35,7 +35,7 @@
  .navbar-default {
      background-color: #424E60;
      border-color: #424E60;
-     margin-bottom: 0;
+
      border-radius: 0;
  }
 
@@ -82,6 +82,7 @@
      background-repeat: no-repeat;
      background-size: cover;
      margin-bottom: 50px;
+     margin-top: -20px;
 
      .box-inner {
          background-color: rgba(250, 250, 250, 0);
@@ -92,8 +93,8 @@
 
      .title {
          text-align: center;
-         //color: #F8F8F8;
-         //font-size: 90px;
+         color: #F8F8F8;
+         font-size: 70px;
          margin-bottom: 80px;
      }
 
