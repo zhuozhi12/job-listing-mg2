@@ -16,11 +16,5 @@
 //= require bootstrap/alert
 //= require bootstrap/dropdown
 //= require bootstrap/modal
+//= require bootstrap-sprockets
 //= require_tree .
-
-$(window).scroll(function() {
-  var scroll = $(window).scrollTop();
-	$("header").css({
-		opacity: 0.5 + (scroll/200)
-	});
-});

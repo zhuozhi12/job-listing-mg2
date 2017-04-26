@@ -78,11 +78,11 @@
  //---------Box---------
 
  .box {
-     background-image: image-url("zhuo7.jpg");
+     background-image: image-url("zhuo100.jpg");
      background-repeat: no-repeat;
      background-size: cover;
      margin-bottom: 50px;
-     margin-top: -20px;
+     margin-top: -30px;
 
      .box-inner {
          background-color: rgba(250, 250, 250, 0);
@@ -254,3 +254,8 @@
      margin-top: 30px;
    }
   }
+//-------------Common--------------
+ .col-centered {
+   float: none;
+   margin: 0 auto;
+ }
