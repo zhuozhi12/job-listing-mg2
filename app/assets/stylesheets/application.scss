@@ -75,44 +75,7 @@
      color: #212121;
  }
 
- //---------Box---------
 
- .box {
-     background-image: image-url("zhuo100.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     margin-bottom: 50px;
-     margin-top: -30px;
-
-     .box-inner {
-         background-color: rgba(250, 250, 250, 0);
-         padding-bottom: 5px;
-         margin-top: 100px;
-         margin-bottom: 40px;
-     }
-
-     .title {
-         text-align: center;
-         color: #F8F8F8;
-         font-size: 70px;
-         margin-bottom: 80px;
-     }
-
-     .slogan {
-         color: #F8F8F8;
-         margin-top: 5px;
-         margin-bottom: 50px;
-         text-align: center;
-         font-size: 25px;
-         top: 12px;
-     }
-
-     .lead {
-         margin-bottom: 60px;
-         text-align: center;
-         color: white;
-     }
- }
 
  //---------Content---------
 
@@ -124,7 +87,8 @@
  .content-section-b {
      padding: 50px 0;
      border-top: 0px solid #e7e7e7;
-     border-bottom: 1px solid #e7e7e7;
+     border-bottom: 0px solid #e7e7e7;
+     img { max-width:100%; }
  }
 
  .section-heading-spacer {
@@ -141,6 +105,8 @@
      font-size: 18px;
      font-weight: 400;
  }
+
+
 
 //注册弹窗
  @import url(http://fonts.googleapis.com/css?family=Roboto);
@@ -258,4 +224,29 @@
  .col-centered {
    float: none;
    margin: 0 auto;
+ }
+
+//------------分类----------------
+
+
+
+//-----网格列分隔线---------
+ @media ( min-width: 768px ) {
+     .grid-divider {
+         position: relative;
+         padding: 0;
+     }
+     .grid-divider>[class*='col-'] {
+         position: static;
+     }
+     .grid-divider>[class*='col-']:nth-child(n+2):before {
+         content: "";
+         border-left: 1px solid #DDD;
+         position: absolute;
+         top: 0;
+         bottom: -100px;
+     }
+     .col-padding {
+         padding: 0 15px;
+     }
  }
