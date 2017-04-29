@@ -12,11 +12,7 @@
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
             <li>
-              <%= link_to("按照交易下限排序", jobs_path(:order => "by_lower_bound")) %>
-            </li>
-            <li>
-                <%= link_to("按照交易上限排序", jobs_path(:order => "by_upper_bound")) %>
-
+              <%= link_to("按照交易金额排序", jobs_path(:order => "by_lower_bound")) %>
             </li>
             <li>
               <%= link_to("按照发布时间排序", jobs_path ) %>
@@ -33,9 +29,9 @@
       <thead>
            <tr>
                <td>
-                   物品</td>
-               <td>交易下限</td>
-               <td>交易上限</td>
+                   物品名称</td>
+               <td>交易金额</td>
+               <td>交易区域</td>
                <td>发布时间</td>
            </tr>
 
